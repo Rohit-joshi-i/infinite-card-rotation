@@ -1,7 +1,7 @@
 name: infinite_card_rotation
 description: A new Flutter package project.
 version: 1.0.0
-repository:
+homepage: https://github.com/Rohit-joshi-i/infinite-card-rotation
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
