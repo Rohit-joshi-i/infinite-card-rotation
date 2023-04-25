@@ -1,4 +1,4 @@
-## GlitchEffect
+## Infinite Card Rotation
 Flutter widget which gives a flip animation to It's child widgets passed to it as the front and back child.
 
 
@@ -7,7 +7,7 @@ Flutter widget which gives a flip animation to It's child widgets passed to it a
 1.  Add the latest version of package to your pubspec.yaml (and run `dart pub get`):
  ```sh
   dependencies:
-    infinite_card_rotation: ^1.0.0
+    infinite_card_rotation: ^1.0.2
 ```
 2.  Import the package and use it in your Flutter App.
  ```sh

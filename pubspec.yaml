@@ -1,6 +1,6 @@
 name: infinite_card_rotation
 description: Flutter package to provide the a card infinite rotations or rotations based on argument provided by the user.
-version: 1.0.0
+version: 1.0.2
 homepage: https://github.com/Rohit-joshi-i/infinite-card-rotation
 
 environment:
