@@ -13,11 +13,29 @@ class FlipCard extends StatefulWidget {
   final Widget front;
   final Widget back;
 
+  ///
+  /// Speed in milliseconds at which the cards with rotate
+  ///
   final int speed;
+  ///
+  /// Direct of the rotation
+  ///
   final CardFlipDirection direction;
+  ///
+  /// Function called when card is Flipped
+  ///
   final VoidCallback? onFlip;
+  ///
+  /// Function called when card flip is completed
+  ///
   final VoidCallback? onFlipDone;
+  ///
+  /// No of times the card is flipped
+  ///
   final double flipCount;
+  ///
+  /// card is flipped infinite times
+  ///
   final bool isInfinite;
   final Alignment alignment;
 
@@ -50,6 +68,11 @@ class _FlipCardState extends State<FlipCard>
   @override
   void initState() {
     super.initState();
+    ///
+    ///
+    /// Initialize the late arguments in the init state
+    ///
+    ///
     isFront = true;
     flipCount = widget.flipCount;
     controller = AnimationController(
@@ -57,6 +80,11 @@ class _FlipCardState extends State<FlipCard>
       duration: Duration(milliseconds: widget.speed),
       vsync: this,
     );
+    ///
+    ///
+    /// First rotation Clockwise
+    ///
+    ///
     _firstRotation = TweenSequence(
       [
         TweenSequenceItem<double>(
@@ -70,6 +98,11 @@ class _FlipCardState extends State<FlipCard>
         ),
       ],
     ).animate(controller!);
+    ///
+    ///
+    /// Second rotation Clockwise
+    ///
+    ///
     _secondRotation = TweenSequence(
       [
         TweenSequenceItem<double>(
@@ -115,6 +148,9 @@ class _FlipCardState extends State<FlipCard>
       });
     }
 
+    ///
+    /// If FLIP count reaches 0 call OnFlipDone
+    ///
     if (flipCount <= 0) {
       widget.onFlipDone?.call();
       return;
