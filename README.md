@@ -11,7 +11,7 @@ Flutter widget which gives a flip animation to It's child widgets passed to it a
 ```
 2.  Import the package and use it in your Flutter App.
  ```sh
-import 'package:glitcheffect/glitcheffect.dart';
+import 'package:infinite_card_rotation/infinite_card_rotation.dart';
 ```
 ## Preview
 > **Example:** Horizontal infinite rotation on the card.
