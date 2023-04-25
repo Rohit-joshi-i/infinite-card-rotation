@@ -17,22 +17,27 @@ class FlipCard extends StatefulWidget {
   /// Speed in milliseconds at which the cards with rotate
   ///
   final int speed;
+
   ///
   /// Direct of the rotation
   ///
   final CardFlipDirection direction;
+
   ///
   /// Function called when card is Flipped
   ///
   final VoidCallback? onFlip;
+
   ///
   /// Function called when card flip is completed
   ///
   final VoidCallback? onFlipDone;
+
   ///
   /// No of times the card is flipped
   ///
   final double flipCount;
+
   ///
   /// card is flipped infinite times
   ///
@@ -68,6 +73,7 @@ class _FlipCardState extends State<FlipCard>
   @override
   void initState() {
     super.initState();
+
     ///
     ///
     /// Initialize the late arguments in the init state
@@ -80,6 +86,7 @@ class _FlipCardState extends State<FlipCard>
       duration: Duration(milliseconds: widget.speed),
       vsync: this,
     );
+
     ///
     ///
     /// First rotation Clockwise
@@ -98,6 +105,7 @@ class _FlipCardState extends State<FlipCard>
         ),
       ],
     ).animate(controller!);
+
     ///
     ///
     /// Second rotation Clockwise
